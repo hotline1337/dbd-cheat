@@ -1,5 +1,6 @@
 #pragma once
 #include "../render/render.h"
+#include "../options.h"
 
 namespace sdk {
 	struct a_player_controller;

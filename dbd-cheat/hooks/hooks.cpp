@@ -35,7 +35,8 @@ bool hooks::initialize() {
 void __stdcall hooks::post_render::hook(sdk::u_object* viewport_client, sdk::u_canvas* canvas) {
 	render::canvas = canvas;
 
-	render::text(50.f, 50.f, _(L"dbd-cheat"), { 255, 255, 255, 255 });
+	if (settings.watermark)
+		render::text(50.f, 50.f, _(L"dbd-cheat"), { 255, 255, 255, 255 });
 
 	const auto world = *reinterpret_cast<sdk::u_world**>(sdk::world);
 	if (!world) return;

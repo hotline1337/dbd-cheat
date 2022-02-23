@@ -28,8 +28,11 @@ void visuals::survivor::run(const sdk::u_world* world, sdk::a_pawn* my_player, s
 			const auto root = mesh->get_bone(0, player_controller);
 			if (root.is_zero()) continue;
 
-			name(root, my_player, camper);
-			skeleton(camper, player_controller, mesh);
+			if (settings.survivor_name)
+				name(root, my_player, camper);
+
+			if (settings.survivor_skeleton)
+				skeleton(camper, player_controller, mesh);
 		}
 	}
 }

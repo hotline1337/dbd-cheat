@@ -4,7 +4,7 @@
 
 namespace sdk {
 	bool initialize() {
-		const auto main = reinterpret_cast<std::uintptr_t>(LI_FN(GetModuleHandleA)(nullptr));
+		const auto main = reinterpret_cast<std::uintptr_t>(LI_FN(GetModuleHandleA).get()(nullptr));
 		if (!main) return false;
 
 		sdk::name_pool = reinterpret_cast<decltype(sdk::name_pool)>(utils::pattern_scan(main, _("48 8D 1D ? ? ? ? EB 16 48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8B D8 C6 05 ? ? ? ? ? 0F 28"), true));
@@ -19,9 +19,10 @@ namespace sdk {
 		sdk::get_bone_matrix = utils::pattern_scan(main, _("48 8B C4 48 89 58 ? 48 89 70 ? 55 57 41 54 41 56 41 57 48 8D 68 ? 48 81 EC ? ? ? ? 0F 29 78"));
 		if (!sdk::get_bone_matrix) return false;
 
-		sdk::unlock_all = utils::pattern_scan(main, "48 8B 05 ? ? ? ? 83 38 00 75 31", true);
+		sdk::unlock_all = utils::pattern_scan(main, _("48 8B 05 ? ? ? ? 83 38 00 75 31"), true);
 		if (!sdk::unlock_all) return false;
 
+		// unlock all customization items
 		*reinterpret_cast<short*>(sdk::unlock_all) = 1;
 
 		sdk::font = sdk::object_array->find_object(_("Font Roboto.Roboto"));

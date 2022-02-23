@@ -28,8 +28,11 @@ void visuals::killer::run(const sdk::u_world* world, sdk::a_pawn* my_player, sdk
 			const auto root = mesh->get_bone(0, player_controller);
 			if (root.is_zero()) continue;
 
-			name(root, my_player, slasher);
-			skeleton(slasher, player_controller, mesh);
+			if (settings.killer_name)
+				name(root, my_player, slasher);
+
+			if (settings.killer_skeleton)
+				skeleton(slasher, player_controller, mesh);
 		}
 	}
 }

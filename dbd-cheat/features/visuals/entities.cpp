@@ -24,14 +24,29 @@ void visuals::entities::run(const sdk::u_world* world, sdk::a_pawn* my_player, s
 			// if the distance (in meters) between local and the entity is higher or equal to 30 don't render it
 			if (my_player->get_distance_to(actor) * 0.01f >= 30) continue;
 
-			generator::name(actor, distance, location, player_controller);
-			pallet::name(actor, distance, location, player_controller);
-			escape_door::name(actor, distance, location, player_controller);
-			chest::name(actor, distance, location, player_controller);
-			window::name(actor, distance, location, player_controller, my_camper);
-			totem::name(actor, distance, location, player_controller);
-			hatch::name(actor, distance, location, player_controller);
-			bear_trap::name(actor, distance, location, player_controller);
+			if (settings.generator)
+				generator::name(actor, distance, location, player_controller);
+
+			if (settings.pallet)
+				pallet::name(actor, distance, location, player_controller);
+
+			if (settings.escape_door)
+				escape_door::name(actor, distance, location, player_controller);
+
+			if (settings.chest)
+				chest::name(actor, distance, location, player_controller);
+
+			if (settings.window)
+				window::name(actor, distance, location, player_controller, my_camper);
+
+			if (settings.totem)
+				totem::name(actor, distance, location, player_controller);
+
+			if (settings.hatch)
+				hatch::name(actor, distance, location, player_controller);
+
+			if (settings.bear_trap)
+				bear_trap::name(actor, distance, location, player_controller);
 		}
 	}
 }

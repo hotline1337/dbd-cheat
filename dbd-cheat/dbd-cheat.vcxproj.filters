@@ -79,6 +79,42 @@
     <ClCompile Include="sdk\unreal\bear_trap\bear_trap.cpp">
       <Filter>files\sdk\unreal\bear_trap</Filter>
     </ClCompile>
+    <ClCompile Include="imgui\kiero.cpp">
+      <Filter>files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\buffer.c">
+      <Filter>files\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\hde32.c">
+      <Filter>files\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\hde64.c">
+      <Filter>files\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\hook.c">
+      <Filter>files\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\trampoline.c">
+      <Filter>files\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\menu.cpp">
+      <Filter>files\menu</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sdk\sdk.h">
@@ -216,6 +252,66 @@
     <ClInclude Include="utils\utils.h">
       <Filter>files\utils</Filter>
     </ClInclude>
+    <ClInclude Include="imgui\kiero.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\shaders.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="options.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\buffer.h">
+      <Filter>files\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\hde32.h">
+      <Filter>files\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\hde64.h">
+      <Filter>files\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\MinHook.h">
+      <Filter>files\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\pstdint.h">
+      <Filter>files\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\table32.h">
+      <Filter>files\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\table64.h">
+      <Filter>files\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\trampoline.h">
+      <Filter>files\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\menu.h">
+      <Filter>files\menu</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="files">
@@ -337,6 +433,15 @@
     </Filter>
     <Filter Include="files\sdk\unreal\player_state">
       <UniqueIdentifier>{2448443e-7812-4f30-a085-e1450505bc6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="files\minhook">
+      <UniqueIdentifier>{b946b144-1f09-409b-98cd-b21c87684cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="files\imgui">
+      <UniqueIdentifier>{73ca0896-7abc-49c5-8f1a-cf519f524c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="files\menu">
+      <UniqueIdentifier>{94d3bd3e-8258-42ca-b017-abc7531018b1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -54,7 +54,6 @@ bool utils::console::initialize(const std::string& title) {
 	freopen_s(reinterpret_cast<_iobuf**>(__acrt_iob_func(1)), _("conout$"), _("w"), __acrt_iob_func(1));
 	freopen_s(reinterpret_cast<_iobuf**>(__acrt_iob_func(2)), _("conout$"), _("w"), __acrt_iob_func(2));
 
-
 	SetConsoleTitleA(title.c_str());
 
 	return true;
@@ -66,6 +65,5 @@ bool utils::console::release() {
 	fclose(__acrt_iob_func(2));
 
 	FreeConsole();
-
 	return true;
 }

@@ -108,6 +108,40 @@
     <ClCompile Include="features\visuals\survivor.cpp" />
     <ClCompile Include="features\visuals\killer.cpp" />
     <ClCompile Include="hooks\hooks.cpp" />
+    <ClCompile Include="imgui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\kiero.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="menu\menu.cpp" />
+    <ClCompile Include="minhook\buffer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="minhook\hde32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="minhook\hde64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="minhook\hook.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="minhook\trampoline.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="render\render.cpp" />
     <ClCompile Include="sdk\misc\killer_bones.cpp" />
     <ClCompile Include="sdk\misc\survivor_bones.cpp" />
@@ -134,6 +168,26 @@
   <ItemGroup>
     <ClInclude Include="features\features.h" />
     <ClInclude Include="hooks\hooks.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="imgui\kiero.h" />
+    <ClInclude Include="imgui\shaders.h" />
+    <ClInclude Include="menu\menu.h" />
+    <ClInclude Include="minhook\buffer.h" />
+    <ClInclude Include="minhook\hde32.h" />
+    <ClInclude Include="minhook\hde64.h" />
+    <ClInclude Include="minhook\MinHook.h" />
+    <ClInclude Include="minhook\pstdint.h" />
+    <ClInclude Include="minhook\table32.h" />
+    <ClInclude Include="minhook\table64.h" />
+    <ClInclude Include="minhook\trampoline.h" />
+    <ClInclude Include="options.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="render\render.h" />
     <ClInclude Include="sdk\misc\killer_bones.h" />
