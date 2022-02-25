@@ -1,5 +1,5 @@
 # dbd-cheat
-internal cheat for dead by daylight
+internal cheat for dead by daylight (supports dx11 only)
 
 ## requirements
 * kernel driver
